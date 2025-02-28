@@ -75,10 +75,12 @@ export default function ExpenseDonut() {
         className="absolute w-full h-full"
         style={{ maxWidth: "200px", maxHeight: "200px" }}
       />
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="text-center">
-          <p className="text-2xl font-bold">$1,750</p>
-          <p className="text-sm text-gray-400">Total Expenses</p>
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <div className="text-center transform -translate-y-1">
+          <p className="text-2xl font-bold whitespace-nowrap">$1,750</p>
+          <p className="text-xs text-gray-400 whitespace-nowrap">
+            Total Expenses
+          </p>
         </div>
       </div>
       <div className="absolute bottom-0 left-0 space-y-2">

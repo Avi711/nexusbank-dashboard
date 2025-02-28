@@ -161,7 +161,7 @@ export default function Home() {
               </button>
             </div>
             <div className="relative bg-emerald-500 p-6 rounded-xl mb-4">
-              <button className="absolute right-4 top-4 bg-white/20 p-2 rounded-full hover:bg-white/30 transition-colors">
+              <button className="absolute right-4 top-4 bg-[#2A2F33]/50 p-2 rounded-full hover:bg-[#2A2F33]/70 transition-colors">
                 <svg
                   className="w-4 h-4"
                   fill="none"
