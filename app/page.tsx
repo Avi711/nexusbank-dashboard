@@ -16,9 +16,9 @@ export default function Home() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#1A1D1F] text-white p-6">
+    <main className="min-h-screen bg-[#1A1D1F] text-white p-4 md:p-6">
       {/* Header */}
-      <header className="flex justify-between items-center mb-8">
+      <header className="flex flex-col sm:flex-row justify-between items-center mb-8 gap-4">
         <div className="flex items-center gap-2">
           <Image
             src="/nexus-bank-logo.svg"
@@ -28,7 +28,7 @@ export default function Home() {
           />
           <span className="text-xl font-semibold">NexusBank</span>
         </div>
-        <div className="flex-1 mx-8">
+        <div className="flex-1 w-full sm:mx-8">
           <div className="relative max-w-md mx-auto">
             <input
               type="text"
@@ -56,10 +56,10 @@ export default function Home() {
         </div>
       </header>
 
-      <div className="grid grid-cols-[240px,1fr,400px] gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-[240px,1fr,400px] gap-6">
         {/* Sidebar */}
-        <nav className="space-y-4">
-          <button className="w-full flex items-center gap-3 bg-[#2A2F33] p-3 rounded-lg hover:bg-[#3A3F43] transition-colors">
+        <nav className="flex overflow-x-auto lg:block space-x-4 lg:space-x-0 lg:space-y-4 pb-4 lg:pb-0">
+          <button className="flex-shrink-0 flex items-center gap-3 bg-[#2A2F33] p-3 rounded-lg hover:bg-[#3A3F43] transition-colors">
             <svg
               className="w-5 h-5"
               fill="none"
@@ -79,26 +79,26 @@ export default function Home() {
 
         {/* Main Content */}
         <div className="space-y-6">
-          <h1 className="text-3xl font-semibold">My Dashboard</h1>
+          <h1 className="text-2xl md:text-3xl font-semibold">My Dashboard</h1>
 
           {/* Tabs */}
-          <div className="flex gap-4">
-            <button className="bg-emerald-500 px-6 py-2 rounded-full hover:bg-emerald-600 transition-colors">
+          <div className="flex flex-wrap gap-2 md:gap-4">
+            <button className="bg-emerald-500 px-4 md:px-6 py-2 rounded-full hover:bg-emerald-600 transition-colors">
               All
             </button>
-            <button className="bg-[#2A2F33] px-6 py-2 rounded-full hover:bg-[#3A3F43] transition-colors">
+            <button className="bg-[#2A2F33] px-4 md:px-6 py-2 rounded-full hover:bg-[#3A3F43] transition-colors">
               Withdrawal
             </button>
-            <button className="bg-[#2A2F33] px-6 py-2 rounded-full hover:bg-[#3A3F43] transition-colors">
+            <button className="bg-[#2A2F33] px-4 md:px-6 py-2 rounded-full hover:bg-[#3A3F43] transition-colors">
               Savings
             </button>
-            <button className="bg-[#2A2F33] px-6 py-2 rounded-full hover:bg-[#3A3F43] transition-colors">
+            <button className="bg-[#2A2F33] px-4 md:px-6 py-2 rounded-full hover:bg-[#3A3F43] transition-colors">
               Deposit
             </button>
           </div>
 
           {/* Revenue Flow Chart */}
-          <div className="bg-[#2A2F33] p-6 rounded-2xl">
+          <div className="bg-[#2A2F33] p-4 md:p-6 rounded-2xl">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold">Revenue Flow</h2>
               <button className="text-gray-400 hover:text-white transition-colors">
@@ -109,7 +109,7 @@ export default function Home() {
           </div>
 
           {/* Bottom Cards */}
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-[#2A2F33] p-6 rounded-2xl">
               <div className="flex justify-between items-center mb-4">
                 <h2 className="text-xl font-semibold">Available</h2>
@@ -153,7 +153,7 @@ export default function Home() {
         {/* Right Sidebar */}
         <div className="space-y-6">
           {/* Card Section */}
-          <div className="bg-[#2A2F33] p-6 rounded-2xl">
+          <div className="bg-[#2A2F33] p-4 md:p-6 rounded-2xl">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-xl font-semibold">My Card</h2>
               <button className="text-gray-400 hover:text-white transition-colors">
@@ -184,7 +184,7 @@ export default function Home() {
           </div>
 
           {/* Transactions Section */}
-          <div className="bg-[#2A2F33] p-6 rounded-2xl">
+          <div className="bg-[#2A2F33] p-4 md:p-6 rounded-2xl">
             <div className="flex justify-between items-center mb-6">
               <h2 className="text-xl font-semibold">Transactions</h2>
               <button className="text-gray-400 hover:text-white transition-colors">
@@ -212,7 +212,7 @@ export default function Home() {
           </div>
 
           {/* Add Friends Section */}
-          <div className="bg-[#2A2F33] p-6 rounded-2xl">
+          <div className="bg-[#2A2F33] p-4 md:p-6 rounded-2xl">
             <h2 className="text-xl font-semibold mb-2">Add friends</h2>
             <p className="text-sm text-gray-400 mb-4">
               Invite friends to join and earn rewards together
